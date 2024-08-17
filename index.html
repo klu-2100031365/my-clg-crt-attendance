@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Calculator</title>
+    <link rel="stylesheet" href="Crt.css">
+</head>
+<body>
+    <div class="scrolling-text">
+        <p>Note:-This Attendance Percentage is Calculated from the date 5/AUG/2024,only for the Final Year Students</p>
+    </div>
+
+    <div class="calculator">
+        <h2>CRT Attendance Calculator</h2>
+        <div class="input-group">
+            <label for="section">Select Section:</label>
+            <select id="section" onchange="updateSection()">
+                <option value="nwtn">NWTN</option>
+                <option value="wtn">WTN</option>
+            </select>
+        </div>
+        <p id="total-classes">Total Classes Conducted: </p>
+        <div class="input-group">
+            <label for="holidays">Holidays:</label>
+            <input type="number" id="holidays" placeholder="Number of Holidays" required>
+        </div>
+        <div class="input-group">
+            <label for="bunkedDays">Days Bunked:</label>
+            <input type="number" id="bunkedDays" placeholder="Full Days Bunked" required>
+        </div>
+        <div class="input-group">
+            <label for="bunkedClasses">Classes Bunked:</label>
+            <input type="number" id="bunkedClasses" placeholder="Individual Classes Bunked" required>
+        </div>
+        <button onclick="calculateAttendance()">Calculate Attendance</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="attendanceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modalMessage"></p>
+        </div>
+    </div>
+    <script src="Crt.js"></script>
+</body>
+</html>
