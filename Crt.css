@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap');
 
 body {
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
+    background-image: url('study.jpg'); /* Replace 'background.jpg' with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: flex;
     font-family: 'Roboto', sans-serif;
     color: #333;
     display: flex;
