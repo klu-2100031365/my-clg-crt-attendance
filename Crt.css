@@ -2,20 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap');
 
 body {
-    background-image: url('study.jpg'); /* Replace 'background.jpg' with your image path */
+    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image path */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
-    padding-left:  50px;
-    color: white;
+    color: #333;
     display: flex;
-    margin-top: 30px;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-    overflow: hidden; /* Prevent scrolling */
+    margin-top: 50px;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    min-height: 100vh; /* Ensures the content is centered vertically even on short screens */
 }
 
 .calculator {
@@ -25,10 +23,9 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 100%;
-    margin: 20px;
     box-sizing: border-box; /* Ensure padding is included in width/height */
+    margin: 20px;
 }
-
 .calculator h2 {
     text-align: center;
     margin-bottom: 20px;
