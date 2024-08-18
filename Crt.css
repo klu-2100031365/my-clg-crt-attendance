@@ -1,8 +1,8 @@
-/* Import Google Fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600&display=swap');
 
 body {
-    background-image: url('study.jpg'); /* Replace 'background.jpg' with your image path */
+    background-image: url('study.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -11,19 +11,19 @@ body {
     color: #333;
     display: flex;
     margin-top: 50px;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically */
-    min-height: 100vh; /* Ensures the content is centered vertically even on short screens */
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
 }
 
 .calculator {
-    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for background */
+    background-color: rgba(255, 255, 255, 0.9); 
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     max-width: 400px;
     width: 100%;
-    box-sizing: border-box; /* Ensure padding is included in width/height */
+    box-sizing: border-box; 
     margin: 20px;
 }
 .calculator h2 {
@@ -91,21 +91,20 @@ body {
 }
 
 .result.pass {
-    color: #28a745; /* Green */
+    color: #28a745; 
     background-color: #e9f7ec;
 }
 
 .result.warning {
-    color: #ffc107; /* Yellow */
+    color: #ffc107; 
     background-color: #fff8e1;
 }
 
 .result.fail {
-    color: #dc3545; /* Red */
+    color: #dc3545; 
     background-color: #f8d7da;
 }
 
-/* Modal styles */
 .modal {
     display: none; 
     position: fixed;
@@ -181,7 +180,6 @@ body {
     to {transform: translateX(-100%);}
 }
 
-/* Highlighted Total Classes Conducted Line */
 #total-classes {
     font-weight: 700;
     color: #000;
@@ -195,7 +193,6 @@ body {
     text-shadow: 1px 1px 2px #888;
 }
 
-/* Additional Styles for Sections and Divs */
 section {
     margin: 20px 0;
     padding: 20px;

@@ -15,10 +15,8 @@ function calculateTotalClasses() {
     for (let date = startDate; date <= today; date = new Date(date.getTime() + dayInMillis)) {
         const day = date.getDay();
         if (currentSection === 'nwtn' && day !== 0 && day !== 3) { 
-            // NWTN section excludes Sundays (0) and Wednesdays (3)
             totalClasses += 8;
         } else if (currentSection === 'wtn' && day !== 0) {
-            // WTN section excludes only Sundays (0)
             totalClasses += 8;
         }
     }
@@ -82,5 +80,4 @@ function closeModal() {
     document.getElementById("attendanceModal").style.display = "none";
 }
 
-// Display total classes conducted on page load
 document.getElementById('total-classes').textContent = `Total Classes Conducted: ${calculateTotalClasses()}`;
